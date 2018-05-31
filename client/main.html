@@ -1,0 +1,36 @@
+<head>
+  <title>levelUp</title>
+</head>
+
+<body>
+
+  <h1 class="header1">Willkomen!</h1>
+  <div class="container">
+ <header>
+     <form class="new-resolution">
+
+    <input type="text" placeholder="new ding" name="title">
+
+    <input type="submit" value="Submit" class="text">
+     </form>
+
+ </header>
+
+        <ol type="I">
+
+        {{#each resolutions}}
+              {{>resolution_test}}
+           {{/each}}
+        </ol>
+      </div>
+
+</body>
+
+<template name="resolution_test">
+
+    <li>
+        {{title}}
+    </li>
+
+</template>
+
